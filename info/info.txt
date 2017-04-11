@@ -1,0 +1,2 @@
+http://www.studytrails.com/frameworks/spring/spring-hibernate-session-factory-annotation/
+https://github.com/Fruzenshtein/spr-mvc-hib/blob/master/pom.xml
