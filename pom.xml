@@ -18,6 +18,9 @@
 		<!-- Hibernate / JPA -->
 		<!-- <hibernate.version>4.3.5.Final</hibernate.version> -->
 		<!-- 4.3.11.Final 5.2.0.Final 5.2.4.Final not compatible: 5.2.5.Final-->
+		
+		<!-- <hibernate.version>5.2.4.Final</hibernate.version>  -->
+
 		<hibernate.version>5.2.4.Final</hibernate.version>
 
 		<!-- Logging -->
@@ -57,7 +60,13 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>${spring-framework.version}</version>
 		</dependency>
- 
+		<!-- 
+		<dependency>
+		   <groupId>org.springframework.data</groupId>
+		   <artifactId>spring-data-jpa</artifactId>
+		   <version>${project.spring.data.jpa.version}</version>
+		</dependency>
+  		-->
  		<!-- CGLIB is required to process @Configuration classes -->
 		<dependency>
 			<groupId>cglib</groupId>
@@ -92,13 +101,13 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Hibernate -->
+		<!-- Hibernate 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-		
+		-->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -112,13 +121,22 @@
 		    <artifactId>spring-web</artifactId>
 		    <version>${spring-framework.version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa 
 		<dependency>
 		    <groupId>org.springframework.data</groupId>
 		    <artifactId>spring-data-jpa</artifactId>
 		    <version>1.11.1.RELEASE</version>
 		</dependency>
-		
+		 -->
+		 
+	<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api -->
+<dependency>
+    <groupId>org.hibernate.javax.persistence</groupId>
+    <artifactId>hibernate-jpa-2.0-api</artifactId>
+    <version>1.0.1.Final</version>
+</dependency>
+
+				 
 		
 		<!-- 
 		<dependency>
@@ -165,6 +183,15 @@
 			<version>1.0.0.M1</version>
 			<scope>test</scope>
 		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/javax.persistence
+	<dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.0.Final</version>
+        </dependency>
+		 -->
 		
 	</dependencies>
   

@@ -81,7 +81,7 @@ public class HibernateConfig {
 	@Bean
 	public LocalSessionFactoryBean getSessionFactory() {
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-		sessionFactory.setDataSource(getDataSource());
+		sessionFactory.setDataSource(getDataSource());	
 		sessionFactory.setPackagesToScan(new String[] { "com.journaldev.model","com.journaldev.dao"});
 		sessionFactory.setHibernateProperties(getHibernateProperties());
 		return sessionFactory;
