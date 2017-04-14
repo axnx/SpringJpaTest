@@ -21,7 +21,7 @@
 		
 		<!-- <hibernate.version>5.2.4.Final</hibernate.version>  -->
 
-		<hibernate.version>5.2.4.Final</hibernate.version>
+		<hibernate.version>5.2.7.Final</hibernate.version>
 
 		<!-- Logging -->
 		<logback.version>1.2.3</logback.version>
@@ -36,11 +36,13 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring-framework.version}</version>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
 			<version>${spring-framework.version}</version>
 		</dependency>
+		 -->
 
 		<!-- Spring ORM support -->
 		<dependency>
@@ -54,12 +56,13 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring-framework.version}</version>
 		</dependency>
-		
+		<!-- 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${spring-framework.version}</version>
 		</dependency>
+		 -->
 		<!-- 
 		<dependency>
 		   <groupId>org.springframework.data</groupId>
@@ -101,19 +104,19 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Hibernate 
+		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-		-->
+	<!-- 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-		
+	-->	
 		
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
 		<dependency>
@@ -129,13 +132,13 @@
 		</dependency>
 		 -->
 		 
-	<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api -->
-<dependency>
-    <groupId>org.hibernate.javax.persistence</groupId>
-    <artifactId>hibernate-jpa-2.0-api</artifactId>
-    <version>1.0.1.Final</version>
-</dependency>
-
+	<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api
+	<dependency>
+	    <groupId>org.hibernate.javax.persistence</groupId>
+	    <artifactId>hibernate-jpa-2.0-api</artifactId>
+	    <version>1.0.1.Final</version>
+	</dependency>
+ -->
 				 
 		
 		<!-- 
@@ -152,12 +155,19 @@
 			<version>5.1.9</version>
 		</dependency>
 		-->
+		
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-		
+		 -->
 		<dependency><!-- wofür ? -->
 			<groupId>javassist</groupId>
 			<artifactId>javassist</artifactId>

@@ -9,6 +9,6 @@ public interface PersonDAO {
 	
 	public List<Person> list();
 	
-	public List<Person> findAllPersons();
+	//public List<Person> findAllPersons();
 	
 }
